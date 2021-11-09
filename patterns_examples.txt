@@ -1,0 +1,455 @@
+We have generated a lot of example patterns for your convenience for
+understanding the input for the parser.
+
+Bus patterns
+
+SEQ(15 a, 39 b) WHERE  WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b) WHERE  WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b) WHERE  WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b) WHERE  WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b) WHERE  WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b) WHERE  WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b) WHERE  and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE c.dist > b.dist * 0.5 and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b) WHERE  and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE c.dist > b.dist * 0.5 and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b) WHERE  and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE c.dist > b.dist * 0.5 and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b) WHERE  and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE c.dist > b.dist * 0.5 and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b) WHERE  and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE c.dist > b.dist * 0.5 and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b) WHERE  and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE c.dist > b.dist * 0.5 and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b) WHERE  WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b) WHERE  WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b) WHERE  WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b) WHERE  WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b) WHERE  WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b) WHERE  WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE c.dist > b.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(145 a, 15 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5356 and b.dist > 0 WITHIN 20000000 milliseconds
+SEQ(145 a, 15 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5356 and b.dist > 5356 WITHIN 20000000 milliseconds
+SEQ(145 a, 15 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5356 and b.dist > 1309 WITHIN 20000000 milliseconds
+SEQ(145 a, 15 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5356 and b.dist > 2105 WITHIN 20000000 milliseconds
+SEQ(145 a, 15 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5356 and b.dist > 3675 WITHIN 20000000 milliseconds
+SEQ(15 a, 145 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5000 and b.dist > 0 WITHIN 10000000 milliseconds
+SEQ(15 a, 145 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5000 and b.dist > 1000 WITHIN 10000000 milliseconds
+SEQ(15 a, 145 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5000 and b.dist > 2000 WITHIN 10000000 milliseconds
+SEQ(15 a, 145 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5000 and b.dist > 3000 WITHIN 10000000 milliseconds
+SEQ(15 a, 145 b, 39 c) WHERE a.dist > 0 and b.dist > c.dist and c.dist > 5000 and b.dist > 5000 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist * 0.5 and c.dist > 0 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist * 0.5 and c.dist > b.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist * 0.5 and c.dist > b.dist WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist * 0.5 and c.dist > b.dist * 1.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist * 0.5 and c.dist > b.dist * 2 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist and c.dist > b.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist and c.dist > b.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist and c.dist > b.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist and c.dist > b.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist and c.dist > b.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist and c.dist > b.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c) WHERE a.dist < b.dist * 2 and b.dist < 433 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b) WHERE a.dist > b.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c) WHERE a.dist > b.dist * 0.5 and b.dist > c.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d) WHERE a.dist > b.dist * 0.5 and b.dist > c.dist * 0.5 and c.dist > d.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e) WHERE a.dist > b.dist * 0.5 and b.dist > c.dist * 0.5 and c.dist > d.dist * 0.5 and d.dist > e.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f) WHERE a.dist > b.dist * 0.5 and b.dist > c.dist * 0.5 and c.dist > d.dist * 0.5 and d.dist > e.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g) WHERE a.dist > b.dist * 0.5 and b.dist > c.dist * 0.5 and c.dist > d.dist * 0.5 and d.dist > e.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE a.dist > b.dist * 0.5 and b.dist > c.dist * 0.5 and c.dist > d.dist * 0.5 and d.dist > e.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c) WHERE a.dist > c.dist * 0.5 and b.delay > 4120 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 and b.delay > 200 WITHIN 5000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 and b.delay > 200 WITHIN 10000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 and b.delay > 200 WITHIN 15000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 and b.delay > 200 WITHIN 30000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 and b.delay > 200 WITHIN 60000000 milliseconds
+SEQ(15 a, 39! b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 and b.delay > 200 WITHIN 100000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39+ b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 100000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 5000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 10000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 15000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 30000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 60000000 milliseconds
+SEQ(15 a, 39 b, 145 c, 38 d, 25 e, 46 f, 40 g, 27 h) WHERE c.dist > b.dist * 0.5 and d.dist > c.dist * 0.5 and e.dist > d.dist * 0.5 and f.dist > e.dist * 0.5 and g.dist > f.dist * 0.5 and h.dist > g.dist * 0.5 WITHIN 100000000 milliseconds
+
+Soccer patterns
+
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 50000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 and |f.x - a.x| <= 50000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 50000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 and |f.x - a.x| <= 50000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 50000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 and |f.x - a.x| <= 50000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 50000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 and |f.x - a.x| <= 50000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 50000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 and |f.x - a.x| <= 50000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 50000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 50000 and |c.x - a.x| <= 50000 and |d.x - a.x| <= 50000 and |e.x - a.x| <= 50000 and |f.x - a.x| <= 50000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 53+ b) WHERE  WITHIN 1000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < c.v WITHIN 1000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d) WHERE b.v < c.v and c.v < d.v WITHIN 1000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e) WHERE b.v < c.v and c.v < d.v and d.v < e.v WITHIN 1000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v WITHIN 1000000000 picoseconds
+SEQ(61 a, 53+ b) WHERE  WITHIN 7000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < c.v WITHIN 7000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d) WHERE b.v < c.v and c.v < d.v WITHIN 7000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e) WHERE b.v < c.v and c.v < d.v and d.v < e.v WITHIN 7000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v WITHIN 7000000000 picoseconds
+SEQ(61 a, 53+ b) WHERE  WITHIN 15000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < c.v WITHIN 15000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d) WHERE b.v < c.v and c.v < d.v WITHIN 15000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e) WHERE b.v < c.v and c.v < d.v and d.v < e.v WITHIN 15000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v WITHIN 15000000000 picoseconds
+SEQ(61 a, 53+ b) WHERE  WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < c.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d) WHERE b.v < c.v and c.v < d.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e) WHERE b.v < c.v and c.v < d.v and d.v < e.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b) WHERE  WITHIN 100000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < c.v WITHIN 100000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d) WHERE b.v < c.v and c.v < d.v WITHIN 100000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e) WHERE b.v < c.v and c.v < d.v and d.v < e.v WITHIN 100000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v WITHIN 100000000000 picoseconds
+SEQ(61 a, 53+ b) WHERE  WITHIN 300000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < c.v WITHIN 300000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d) WHERE b.v < c.v and c.v < d.v WITHIN 300000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e) WHERE b.v < c.v and c.v < d.v and d.v < e.v WITHIN 300000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v WITHIN 300000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and a.v > b.v * 1.5 WITHIN 1000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and a.v > b.v * 1.5 WITHIN 7000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and a.v > b.v * 1.5 WITHIN 15000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and a.v > b.v * 1.5 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and a.v > b.v * 1.5 WITHIN 100000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and a.v > b.v * 1.5 WITHIN 300000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 50000 and b.v < 120000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 50000 and b.v < 120000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 50000 and b.v < 120000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 50000 and b.v < 120000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 50000 and b.v < 120000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 50000 and b.v < 120000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - c.x| <= 100000 and b.v > c.v and c.v > 100000 and b.v > 0 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - c.x| <= 100000 and b.v > c.v and c.v > 100000 and b.v > 53705 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - c.x| <= 100000 and b.v > c.v and c.v > 100000 and b.v > 71560 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - c.x| <= 100000 and b.v > c.v and c.v > 100000 and b.v > 86259 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - c.x| <= 100000 and b.v > c.v and c.v > 100000 and b.v > 100000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and b.v > 0 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and b.v > c.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and b.v > c.v + 1000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and b.v > c.v + 10000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 50000 and b.v > c.v + 100000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 1000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 7000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 15000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 50000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 100000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 300000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 700000000000 picoseconds
+SEQ(61 a, 8 b, 13 c) WHERE |a.x - b.x| <= 70000 and c.v > 90000 and b.v > c.v and b.v > 0 WITHIN 1000000000000 picoseconds
+SEQ(61 a, 13! b, 8 c) WHERE |a.x - c.x| <= 70000 and b.v < 6500 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b) WHERE |b.x - a.x| <= 60000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c) WHERE |b.x - a.x| <= 60000 and |c.x - a.x| <= 60000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d) WHERE |b.x - a.x| <= 60000 and |c.x - a.x| <= 60000 and |d.x - a.x| <= 60000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e) WHERE |b.x - a.x| <= 60000 and |c.x - a.x| <= 60000 and |d.x - a.x| <= 60000 and |e.x - a.x| <= 60000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f) WHERE |b.x - a.x| <= 60000 and |c.x - a.x| <= 60000 and |d.x - a.x| <= 60000 and |e.x - a.x| <= 60000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - a.x| <= 60000 and |c.x - a.x| <= 60000 and |d.x - a.x| <= 60000 and |e.x - a.x| <= 60000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c) WHERE b.v < 64268 and a.v < b.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - c.x| <= 50000 and |c.x - d.x| <= 50000 and |d.x - e.x| <= 50000 and |e.x - f.x| <= 50000 and |f.x - g.x| <= 50000 WITHIN 1000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - c.x| <= 50000 and |c.x - d.x| <= 50000 and |d.x - e.x| <= 50000 and |e.x - f.x| <= 50000 and |f.x - g.x| <= 50000 WITHIN 7000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - c.x| <= 50000 and |c.x - d.x| <= 50000 and |d.x - e.x| <= 50000 and |e.x - f.x| <= 50000 and |f.x - g.x| <= 50000 WITHIN 15000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - c.x| <= 50000 and |c.x - d.x| <= 50000 and |d.x - e.x| <= 50000 and |e.x - f.x| <= 50000 and |f.x - g.x| <= 50000 WITHIN 50000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - c.x| <= 50000 and |c.x - d.x| <= 50000 and |d.x - e.x| <= 50000 and |e.x - f.x| <= 50000 and |f.x - g.x| <= 50000 WITHIN 100000000000 picoseconds
+SEQ(61 a, 53 b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE |b.x - c.x| <= 50000 and |c.x - d.x| <= 50000 and |d.x - e.x| <= 50000 and |e.x - f.x| <= 50000 and |f.x - g.x| <= 50000 WITHIN 300000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v and f.v < g.v WITHIN 1000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v and f.v < g.v WITHIN 7000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v and f.v < g.v WITHIN 15000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v and f.v < g.v WITHIN 50000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v and f.v < g.v WITHIN 100000000000 picoseconds
+SEQ(61 a, 53+ b, 23 c, 57 d, 59 e, 19 f, 49 g) WHERE b.v < c.v and c.v < d.v and d.v < e.v and e.v < f.v and f.v < g.v WITHIN 300000000000 picoseconds
+
+
+stock patterns
+
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 5 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 15 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 30 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 60 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 90 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 200 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 300 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL b) WHERE  WITHIN 400 minutes
+SEQ(GOOG a, AAPL b, MSFT c) WHERE c.volume < b.volume * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.volume < b.volume * 1.05 and d.volume < c.volume * 1.05 and e.volume < d.volume * 1.05 and f.volume < e.volume * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 5 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 15 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 30 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 60 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 90 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 200 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 300 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL+ b) WHERE  WITHIN 400 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c) WHERE c.open < b.open * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 WITHIN 400 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 5 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 5 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 5 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 5 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 5 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 15 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 15 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 15 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 15 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 15 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 30 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 30 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 30 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 30 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 30 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 60 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 60 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 60 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 60 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 60 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 90 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 90 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 90 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 90 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 90 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 200 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 200 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 200 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 200 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 200 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 300 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 300 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 300 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 300 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 300 minutes
+SEQ(GOOG a, AAPL! b) WHERE  WITHIN 400 minutes
+SEQ(GOOG a, AAPL! b, MSFT c) WHERE c.open > b.open * 1.1 and b.open < 15 WITHIN 400 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 WITHIN 400 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 WITHIN 400 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 WITHIN 400 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 5 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 15 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 30 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 60 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 90 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 200 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 300 minutes
+SEQ(GOOG a, AAPL! b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open > b.open * 1.1 and b.open < 15 and d.open > c.open * 1.1 and b.open < 15 and e.open > d.open * 1.1 and b.open < 15 and f.open > e.open * 1.1 and b.open < 15 and g.open > f.open * 1.1 and b.open < 15 WITHIN 400 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 5 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 15 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 30 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 60 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 90 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 200 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 300 minutes
+SEQ(GOOG a, AAPL+ b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.1 and d.open < c.open * 1.1 and e.open < d.open * 1.1 and f.open < e.open * 1.1 and g.open < f.open * 1.1 WITHIN 400 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 5 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 15 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 30 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 60 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 90 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 200 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 300 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE c.open < b.open * 1.05 and d.open < c.open * 1.05 and e.open < d.open * 1.05 and f.open < e.open * 1.05 and g.open < f.open * 1.05 WITHIN 400 minutes
+SEQ(AAPL a, MSFT b, INTC c) WHERE a.volume > c.volume * 1.03 and b.volume > c.volume and c.volume > 100000 and b.volume > 0 WITHIN 60 minutes
+SEQ(AAPL a, MSFT b, INTC c) WHERE a.volume > c.volume * 1.03 and b.volume > c.volume and c.volume > 100000 and b.volume > 25000 WITHIN 60 minutes
+SEQ(AAPL a, MSFT b, INTC c) WHERE a.volume > c.volume * 1.03 and b.volume > c.volume and c.volume > 100000 and b.volume > 50000 WITHIN 60 minutes
+SEQ(AAPL a, MSFT b, INTC c) WHERE a.volume > c.volume * 1.03 and b.volume > c.volume and c.volume > 100000 and b.volume > 75000 WITHIN 60 minutes
+SEQ(AAPL a, MSFT b, INTC c) WHERE a.volume > c.volume * 1.03 and b.volume > c.volume and c.volume > 100000 and b.volume > 100000 WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > 0 WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.5 WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 2 WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 5 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 15 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 30 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 60 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 90 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 200 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 300 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 400 minutes
+SEQ(AAPL a, INTC b, MSFT c) WHERE b.volume > a.volume * 1.05 and c.volume > b.volume * 1.05 WITHIN 800 minutes
+SEQ(AAPL a, INTC+ b, MSFT c) WHERE b.open < 13 and a.open < 84 WITHIN 5 minutes
+SEQ(AAPL a, INTC b) WHERE a.open > b.open * 1.1 WITHIN 10 minutes
+SEQ(AAPL a, MSFT b, INTC c) WHERE a.open > b.open * 1.1  and b.open > c.open * 1.1 WITHIN 10 minutes
+SEQ(GOOG a, AAPL b, MSFT c, INTC d) WHERE a.open > b.open * 1.1  and b.open > c.open * 1.1 and c.open > d.open * 1.1 WITHIN 10 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e) WHERE a.open > b.open * 1.1  and b.open > c.open * 1.1 WITHIN 10 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f) WHERE a.open > b.open * 1.1  and b.open > c.open * 1.1 WITHIN 10 minutes
+SEQ(GOOG a, AAPL b, MSFT c, NFLX d, INTC e, YHOO f, EBAY g) WHERE a.open > b.open * 1.1  and b.open > c.open * 1.1 and e.volume > d.volume * 1.3 and e.volume > f.volume * 1.3 and g.volume > f.volume * 1.3 WITHIN 10 minutes
+SEQ(AAPL a, MSFT! b, INTC c) WHERE a.open > c.open * 1.1  and b.open < 15 WITHIN 10 minutes
